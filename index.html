@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="container cards bg-success" style="min-height: 115px;">
+            <div class="row " id=stickmanHand>
+                <p class="text-white">stickman hand</p>
+            </div>
+
+            <div class="row " id='playerHand'>
+                <p class="text-white">player hand</p>
+            </div>
+        </div>
+
+        <div class="container d-flex w-100 border">
+            <div class="container d-flex flex-column mt-2">
+                <button id='startGameBtn'>start game</button>
+                <button id='takeCardBtn'>take card</button>
+                <button id='checkCardsBtn'>check</button>
+            </div>
+
+            <div class="container ">
+                <div class="row ">
+                    <div class="col-md-4 border">
+                        <p>player hand</p>
+                    </div>
+                    <div class="col-md-4 border">
+                        <p>stickman hand</p>
+                    </div>
+                </div>
+
+                <div class="row ">
+                    <div class="col-md-4 border">
+                        <p id="playerHandSum"></p>
+                    </div>
+                    <div class="col-md-4 border">
+                        <p id="stickmanHandSum"> </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container border">
+                <input class="mt-2" type="number" id='betSizeInput' placeholder="your bet">
+                <p class="mt-1 mb-1">balance</p>
+                <div class="border" id='balanceDisplay'></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
+
+</body>
+
+</html>
